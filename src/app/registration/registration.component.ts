@@ -75,7 +75,4 @@ toggleConfirmPasswordVisibility(): void {
 
 
 
-function openSnackbar(message: any) {
-  throw new Error('Function not implemented.');
-}
 
