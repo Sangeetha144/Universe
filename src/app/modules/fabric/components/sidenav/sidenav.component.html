@@ -1,0 +1,134 @@
+
+
+<mat-sidenav-container class="custom-sidenav-container">
+
+  <mat-sidenav #sidenav [opened]="true" mode="side" class="custom-sidenav">
+
+    <div class="logo-container">
+
+      <!-- <img src="\assets\logo.png" height="55px" alt="Logo" class="custom-logo"/> -->
+
+    </div><br>
+
+    <mat-nav-list class="custom-nav-list">
+
+      <a mat-list-item routerLink="/fabric/" class="custom-nav-item">
+
+        <mat-icon class="custom-icon homeu">home</mat-icon>
+
+        <span mat-line class="custom-span custom-span-bold mine">Home</span>
+
+      </a>
+
+      <div class="data-share-container">
+        <a mat-list-item (click)="toggleDataShareMenu()" class="custom-nav-item" routerLink="/fabric/">
+          <mat-icon class="custom-icon shareu">database</mat-icon>
+          <span mat-line class="custom-span custom-span-bold custom-white">Data Share</span>
+          <mat-icon class="custom-icon thank">expand_more</mat-icon>
+        </a>
+        
+      </div><br>
+
+      <div *ngIf="dataShareMenuOpen" class="custom-submenu">
+
+        <mat-spinner [diameter]="50" *ngIf="isLoading" class="loading-spinner"></mat-spinner>
+
+        <div *ngIf="!isLoading">
+
+          <div class="two">
+
+            <a mat-list-item routerLink="/fabric/share" class="custom-nav-item" (click)="togglePartnerDropdown('demand')">
+
+              <span mat-line class="custom-span custom-span-bold">Demand Insights</span>
+
+              <mat-icon class="custom-icon"> expand_more</mat-icon> 
+
+            </a> 
+
+          </div>
+
+          <div *ngIf="partnerDropdownOpen === 'demand'" class="partner-dropdown">
+
+            <a mat-list-item class="custom-nav-item" (click)="toggleTablesAndViewsDropdown('demand')">
+
+              <mat-icon class="custom-icon four custom-partner-icon">arrow_forward_ios</mat-icon>
+
+              <span mat-line class="custom-span custom-span-bold">Partner 1</span>
+
+            </a>
+
+            <div *ngIf="tablesAndViewsDropdownOpen === 'demand'" class="partner-dropdown custom-right-menu">
+
+              <a mat-list-item routerLink="/partner1/tables" class="custom-nav-item">
+
+                <span mat-line class="custom-span custom-span-bold">Tables</span>
+
+                <mat-icon class="custom-icon"> expand_more</mat-icon>
+
+              </a>
+
+              <a mat-list-item routerLink="/partner1/views" class="custom-nav-item">
+
+                <span mat-line class="custom-span custom-span-bold">Views</span>
+
+                <mat-icon class="custom-icon"> expand_more</mat-icon>
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="three">
+
+            <a mat-list-item (click)="togglePartnerDropdown('vendormate')" class="custom-nav-item" routerLink="/fabric/share">
+
+              <span mat-line class="custom-span custom-span-bold">Vendormate</span>
+
+              <mat-icon class="custom-icon"> expand_more</mat-icon> 
+
+            </a>
+
+          </div>
+
+          <div *ngIf="partnerDropdownOpen === 'vendormate'" class="partner-dropdown">
+
+            <a mat-list-item class="custom-nav-item" (click)="toggleTablesAndViewsDropdown('vendormate')">
+
+              <mat-icon class="custom-icon four custom-partner-icon">arrow_forward_ios</mat-icon>
+
+              <span mat-line class="custom-span custom-span-bold">Partner 2</span>
+
+            </a>
+
+            <div *ngIf="tablesAndViewsDropdownOpen === 'vendormate'" class="partner-dropdown custom-right-menu">
+
+                <a mat-list-item routerLink="/partner1/tables" class="custom-nav-item">
+
+                  <span mat-line class="custom-span custom-span-bold">Tables</span>
+
+                  <mat-icon class="custom-icon"> expand_more</mat-icon>
+
+                </a>
+
+              <a mat-list-item routerLink="/partner2/views" class="custom-nav-item">
+
+                <span mat-line class="custom-span custom-span-bold">Views</span>
+
+                <mat-icon class="custom-icon"> expand_more</mat-icon>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+</mat-sidenav-container>

@@ -1,0 +1,37 @@
+$color_1: #627bb8;
+$color_2: rgb(86, 86, 86);
+$background-color_1: #F5F7F6;
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	background-color:#FFFFFF;
+	font-family: "Poppins", sans-serif;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo-container{
+	margin-top: 15px;
+}
+
+.icon {
+	align-items: start;
+	color: $color_1;
+	margin-top: 20px;
+}
+
+.right-nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	mat-icon {
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+mat-icon {
+	font-size: 24px;
+	color: $color_2;
+}

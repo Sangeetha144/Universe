@@ -1,0 +1,83 @@
+
+
+ 
+<div id="content">
+  <div id="shade">
+  <div id="first">
+
+  
+    <div class="logo">
+      <img src="/assets/logos/logo.png" width="300px"/>
+    </div>
+    <div class="registration">
+      <div class="heading">
+        <p class="partneruser">Partner Registration Form</p>
+      </div>
+      <br>
+      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="frm">
+      
+        <div class="name-fields">
+          <!-- First Name Field -->
+          <mat-form-field appearance="fill" style="width:140px" >
+            <mat-label><mat-icon class="icn">person</mat-icon> First Name</mat-label>
+            <input matInput formControlName="firstName" >
+            <mat-error *ngIf="registrationForm.get('firstName')?.hasError('required')">First Name is required</mat-error>
+          </mat-form-field>
+          <!-- Last Name Field -->
+          <mat-form-field appearance="fill" style="width:140px;padding-right: 24px;" >
+            <mat-label><mat-icon class="icn">person</mat-icon> Last Name</mat-label>
+            <input matInput formControlName="lastName" >
+            <mat-error *ngIf="registrationForm.get('lastName')?.hasError('required')">Last Name is required</mat-error>
+          </mat-form-field>
+        </div>
+        <!-- Email Field -->
+        <mat-form-field appearance="fill" style="width: 300px;">
+          <mat-label><mat-icon class="icn">email</mat-icon> Email</mat-label>
+          <input matInput formControlName="email" >
+          <mat-error *ngIf="registrationForm.get('email')?.hasError('required')">Email is required</mat-error>
+          <mat-error *ngIf="registrationForm.get('email')?.hasError('pattern')">Invalid email format</mat-error>
+        </mat-form-field>
+        <br>
+        <!-- Password Field -->
+  <mat-form-field appearance="fill" style="width: 300px;">
+    <mat-label><mat-icon class="icn">lock</mat-icon> Password</mat-label>
+    <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" >
+    <mat-error *ngIf="registrationForm.get('password')?.hasError('required')">Password is required</mat-error>
+    <mat-error *ngIf="registrationForm.get('password')?.hasError('pattern')">Password should have atleast 8 character upper&lower case,numbers,special character</mat-error>
+    <button class="eye"mat-icon-button tabindex="-1" matSuffix (click)="togglePasswordVisibility()">
+      <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+    </button>
+    <mat-error *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
+      <!-- Error messages for password field -->
+    </mat-error>
+  </mat-form-field>
+  <br>
+  <!-- Confirm Password Field -->
+  <mat-form-field appearance="fill" style="width: 300px;">
+    <mat-label><mat-icon class="icn">lock</mat-icon> Confirm Password</mat-label>
+    <input matInput [type]="hideConfirmPassword ? 'password' : 'text'" formControlName="confirmPassword" >
+    <mat-error *ngIf="registrationForm.get('confirmPassword')?.hasError('required')">Confirm Password is required</mat-error>
+    <mat-error *ngIf="registrationForm.hasError('passwordMismatch')">Passwords do not match</mat-error>
+    <button class="eye" mat-icon-button tabindex="-1" matSuffix (click)="toggleConfirmPasswordVisibility()">
+      <mat-icon>{{ hideConfirmPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+    </button>
+    <mat-error *ngIf="registrationForm.get('confirmPassword')?.invalid && registrationForm.get('confirmPassword')?.touched">
+      <!-- Error messages for confirm password field -->
+    </mat-error>
+  </mat-form-field>
+  <br>
+        <!-- Buttons -->
+        <div class="button-group">
+          <button mat-raised-button color="primary" type="submit" class="btn" style="width:140px;" >REGISTER</button>
+          <button  type="button" color="danger" mat-raised-button class="btn-cancel" style="width:140px;" (click)="onCancel()">CLEAR</button>
+        </div>
+        <div  class="login-link">
+          <a [routerLink]="['/login']"  style="color:white;"><small>Already a partner ? <u>login here</u></small></a>
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+   
+  

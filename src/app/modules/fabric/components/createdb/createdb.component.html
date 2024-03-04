@@ -1,0 +1,47 @@
+<div style="width:300px;padding:20px;height:475px;" class="con">
+    <mat-icon style="margin-left: 270px;margin-top: 2px; cursor: pointer;" (click)="closePopup()">highlight_off</mat-icon>
+    <div id="con">
+        <h1 mat-dialog-title class="title"><mat-icon>server</mat-icon>Create Database</h1>
+        <div mat-dialog-content>
+            <form class="example-form">
+                <h3>Name of the Database</h3>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Database Name</mat-label>
+                    <input matInput placeholder="Ex:Users">
+                </mat-form-field>
+            </form>
+            <section class="example-section" [formGroup]="roles">
+                <h3>Role</h3>
+                <p><mat-checkbox formControlName="organization">Organization Administrator</mat-checkbox></p>
+                <p><mat-checkbox formControlName="account">Account Administrator</mat-checkbox></p>
+                <div *ngFor="let customRole of customRoleControls; let i = index" class="checkbox-wrapper">
+                    <mat-checkbox [checked]="customRole.checked" (change)="toggleCheckbox(customRole)" class="custom-checkbox"><span class="checkbox-label">{{ customRole.label }}</span></mat-checkbox>
+                  </div>
+                  
+                  
+                <div *ngIf="creatingCustomRole; else customRoleButton" style="display: flex;gap:8px">
+                    <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label class="custom-form-field">Create custom Role</mat-label>
+                        <input matInput formControlName="customRole" placeholder="Enter custom role">
+                    </mat-form-field>
+                    <button mat-raised-button style="background-color: black;" (click)="addCustomRole()">Add</button>
+                </div>
+                <ng-template #customRoleButton>
+                    <p id="customrole" (click)="toggleCustomRoleInput()">
+                        <mat-icon style="color:green;cursor: pointer;" id="customadd">add</mat-icon>Create custom Role
+                    </p>
+                </ng-template>
+            </section>
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <div class="button-group">
+            <button type="button" mat-raised-button color="warn" class="btn-cancel">
+                <mat-icon>highlight_off</mat-icon><span>Clear</span>
+            </button>
+            <button type="button" class="btn-share" mat-raised-button color="danger" (click)="createDb()">
+                <mat-icon>add</mat-icon><span>Create</span>
+            </button>
+        </div>
+    </div>
+</div>

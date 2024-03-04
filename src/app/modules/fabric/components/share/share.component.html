@@ -1,0 +1,103 @@
+<button mat-raised-button  (click)="openPopup()" style="margin-left: 808px;margin-top: 20px; margin-bottom: 20px;"><mat-icon>add</mat-icon>Add Connection</button>
+<div class="parent">
+
+<div class="container-share">
+    <div class="heading">
+    <h2>Create Share</h2>
+    </div>
+    <form [formGroup]="dataForm" (ngSubmit)="onFormSubmit()">
+    <div class="select">
+   
+    <h4>Name Of Share</h4>
+    <mat-form-field appearance="outline" class="field" >
+    <mat-label>-select-</mat-label>
+    <mat-select formControlName="dataShare">
+    <mat-option *ngFor="let share of datashares" [value]="share">
+    {{share}}
+    </mat-option>
+    </mat-select>
+    </mat-form-field>
+     
+    <h4>Object To Be Shared</h4>
+    <mat-form-field appearance="outline">
+    <mat-label>-select-</mat-label>
+    <mat-select formControlName="objectShare">
+    <mat-option *ngFor="let object of objectshares" [value]="object">
+    {{object}}
+    </mat-option>
+       
+    </mat-select>
+    </mat-form-field>
+     
+    <h4>Account</h4>
+    <mat-form-field appearance="outline">
+    <mat-label>-select-</mat-label>
+    <mat-select formControlName="account">
+    <mat-option *ngFor="let account of accounts" [value]="account">
+    {{account}}
+    </mat-option>
+    </mat-select>
+    </mat-form-field>
+    </div>
+     
+    <div class="button-group">
+    <button type="button" class="btn-cancel" (click)="resetAll()">
+    <mat-icon>highlight_off</mat-icon><span>Cancel</span>
+    </button>
+    <button type="submit" class="btn-share">
+    <mat-icon>add</mat-icon><span>Add Share</span>
+    </button>
+    </div>
+    </form>
+</div>
+<div class="container">
+    <div class="heading">
+        <h2>Data Share Object Information</h2>
+        </div>
+        <div class="table">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                <!-- Checkbox Column -->
+                <ng-container matColumnDef="revokeAccess">
+                  <th mat-header-cell *matHeaderCellDef>Revoke Access
+                    <!-- <mat-checkbox (change)="$event ? toggleAllRows() : null"
+                                  [checked]="selection.hasValue() && isAllSelected()"
+                                  [indeterminate]="selection.hasValue() && !isAllSelected()"
+                                  [aria-label]="checkboxLabel()">
+                    </mat-checkbox> -->
+                  </th>
+                  <td mat-cell *matCellDef="let row">
+                    <mat-checkbox (click)="$event.stopPropagation()"
+                                  (change)="$event ? selection.toggle(row) : null"
+                                  [checked]="selection.isSelected(row)"
+                                  [aria-label]="checkboxLabel(row)">
+                    </mat-checkbox>
+                  </td>
+                </ng-container>
+             
+                <!-- Define your other columns here -->
+               
+                <ng-container matColumnDef="dataShare">
+                  <th mat-header-cell *matHeaderCellDef> Data Share Name</th>
+                  <td mat-cell *matCellDef="let element"> {{ element.dataShare }} </td>
+                </ng-container>
+             
+                <ng-container matColumnDef="objectShare">
+                  <th mat-header-cell *matHeaderCellDef> Object Share Name</th>
+                  <td mat-cell *matCellDef="let element"> {{ element.objectShare }} </td>
+                </ng-container>
+             
+                <ng-container matColumnDef="account">
+                  <th mat-header-cell *matHeaderCellDef> Account </th>
+                  <td mat-cell *matCellDef="let element"> {{ element.account }} </td>
+                </ng-container>
+             
+                <!-- Header and row definitions -->
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selection.toggle(row)"></tr>
+              </table>
+             
+        </div>
+  <button  class="btn" (click)="revokeSelectedRows()">Revoke</button>
+ </div>
+
+</div>

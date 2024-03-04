@@ -1,0 +1,142 @@
+
+ 
+.container-share{
+ width:350px;
+ height:380px;
+ border-radius: 8px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ font-family: "Poppins", sans-serif;
+}
+.heading{
+ background-color: #146EA0;
+ border-radius: 8px 8px 0px 0px;
+ padding: 0.5px; /* Adjust the padding as needed */
+ 
+}
+.heading h2{
+ text-align: center;
+ color:white;
+ position: relative;
+ top:7px;
+ font-family: "Poppins", sans-serif;
+}
+.select{
+ padding-left: 20px;
+ padding-top: 10px;
+}
+ h4{
+    font-family: "Poppins", sans-serif;
+ }
+mat-form-field {
+ width: 310px;
+ height: 48px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+
+ 
+h4{
+ font-weight: bold;
+}
+.btn-share,
+.btn-cancel {
+ color: white;
+ height: 35px;
+ width: 120px; /* Adjusted width for buttons */
+ border: none;
+ font-size: 15px;
+ justify-content: center;
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+ border-radius: 8px;
+ cursor: pointer;
+ padding: 7px;
+ }
+mat-icon{
+ position: relative;
+ top:-1.5px;
+}
+.btn-share {
+ background-color: #19B220;
+ margin-left: 20px;
+}
+ 
+.btn-cancel {
+ background-color: grey;
+ margin-right: 20px;
+}
+ 
+.button-group {
+ text-align: center;
+ margin-top: 5px; /* Added to center the buttons horizontally */
+}
+.button-group button {
+ display: inline-flex;
+ align-items: center;
+ font-family: "Poppins", sans-serif;
+ font-size: 14px;
+}
+ 
+ 
+.parent{
+    display: flex;
+    gap: 2%;
+    margin:10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn{
+    background-color: #146EA0;
+    color:white;
+    padding: 10px;
+ height: 38px;
+ width: 120px; /* Adjusted width for buttons */
+ border: none;
+ font-size: 15px;
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+ border-radius: 8px;
+ margin-left: 450px;
+ margin-top:30px;
+margin-bottom:15px ;
+ font-family: "Poppins", sans-serif;
+}
+
+   .mat-mdc-table .mdc-data-table__header-row {
+    background-color:#FF9700 ;
+    color:white;
+   }
+   th{
+    color:white;
+   }
+   tr.mat-header-row {
+    height: 35px;
+}
+.container{
+    width:600px;
+    height:auto;
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.table{
+    margin-top: 30px;
+margin-left:20px;
+margin-right:20px;
+
+}
+
+td,th{
+    border:1px solid rgb(238, 219, 219);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+.mat-mdc-header-row, .mat-mdc-row{
+    height:35px;
+}
+
+.mat-mdc-raised-button ,.mat-primary{
+    --mdc-protected-button-container-color:#146EA0 !important;
+    --mdc-protected-button-label-text-color:white !important;
+}

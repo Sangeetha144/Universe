@@ -1,0 +1,146 @@
+
+#content {
+    position: relative;
+    background: linear-gradient(to top left, #ff9700 0%, #35afd7 57%)!important;
+    color: white;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    height: 585px;
+    overflow: hidden; /* Add this line to hide horizontal scrollbar */
+}
+
+.image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Adjust as needed */
+   
+}
+
+.support {
+ 
+   position: relative;
+   top:-50px;
+   left:1200px
+}
+
+
+
+ 
+.heading {
+
+    text-align: center;
+    padding: 5px;
+}
+h1{
+    padding-top:25px;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 500;
+}
+ p{
+    padding-top: 10px;
+    line-height: 2.5px;
+    letter-spacing: 2px;
+    font-size: 16px;
+ }
+
+
+.icon {
+    position: absolute;
+    width: 110px;
+    height: 146px;
+    background-size:cover;
+    transition: background-image 0.8s ease-in-out, transform 0.3s ease-in-out;
+}
+.icon:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+}
+ 
+#intelligence {
+    background-image: url('/assets/landingimages/Group\ 523.png');
+    top: -30px; /* Adjust as needed */
+    left: 412px; /* Adjust as needed */
+}
+ 
+#intelligence:hover {
+    background-image: url('/assets/landingimages/Group\ 529.png');
+}
+ 
+#analytics {
+    background-image: url('/assets/landingimages/Group\ 245.png');
+    top: 98px; /* Adjust as needed */
+    right: 811px; /* Adjust as needed */
+}
+ 
+#analytics:hover {
+    background-image: url('/assets/landingimages/Group\ 522.png');
+}
+ 
+#fabric {
+    background-image: url('/assets/landingimages/Group\ 525.png');
+    bottom: 218px; /* Adjust as needed */
+    left: 740px; /* Adjust as needed */
+}
+ 
+#fabric:hover {
+    background-image: url('/assets/landingimages/Group\ 526.png');
+}
+ 
+#observability {
+    background-image: url('/assets/landingimages/Group\ 527.png');
+    bottom: 59px; /* Adjust as needed */
+    right: 365px; /* Adjust as needed */
+}
+ 
+#observability:hover {
+    background-image: url('/assets/landingimages/Group\ 530.png');
+}
+ 
+::ng-deep .basic-tooltip{
+    --mdc-plain-tooltip-container-color:#ffffff !important;
+    --mdc-plain-tooltip-supporting-text-color:black;
+    --mdc-plain-tooltip-supporting-text-font:"Poppins", sans-serif;
+    --mdc-plain-tooltip-supporting-text-size:10px;
+} 
+
+
+
+$color_1: #627bb8;
+$color_2: rgb(86, 86, 86);
+$background-color_1: #F5F7F6;
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+   background-color: transparent !important;
+	font-family: "Poppins", sans-serif;
+}
+.logo-container{
+	margin-top: 15px;
+}
+
+.icon {
+	align-items: start;
+	color: white;
+	margin-top: 20px;
+}
+
+.right-nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	mat-icon {
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}
+mat-icon {
+	font-size: 24px;
+	color: $color_2;
+}
+

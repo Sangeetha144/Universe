@@ -1,0 +1,200 @@
+{
+  "customer": [
+    {
+
+      "firstName": "John",
+      "lastName": "Dane",
+      "email": "john.dane@test.com"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Joe",
+      "email": "david.joe@test.com"
+    },
+    {
+      "firstName": "Jenni",
+      "lastName": "george",
+      "email": "jenni.george@test.com"
+    },
+    {
+      "firstName": "David",
+      "lastName": "Adam",
+      "email": "david.adam@test.com"
+    },
+    {
+      "firstName": "Kevin",
+      "lastName": "Baker",
+      "email": "kevin.baker@test.com"
+    },
+    {
+      "firstName": "Derek",
+      "lastName": "Young",
+      "email": "derek.young@test.com"
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Parker",
+      "email": "peter.parker@test.com"
+    },
+    {
+      "firstName": " David",
+      "lastName": "Heeder",
+      "email": "david.heeder@test.com"
+    },
+    {
+      "firstName": "kaushika",
+      "lastName": "J",
+      "email": "kaushika@in.com"
+    },
+    {
+      "firstName": "Harini",
+      "lastName": "P",
+      "email": "harini@in.com"
+    },
+    {
+      "firstName": "Anu",
+      "lastName": "K",
+      "email": "anu@in.com"
+    },
+    {
+      "firstName": "yuwin",
+      "lastName": "R",
+      "email": "yuwin@in.com"
+    },
+    {
+      "firstName": "jannani",
+      "lastName": "V",
+      "email": "janani@in.com"
+    },
+    {
+      "firstName": "lakshmi",
+      "lastName": "I",
+      "email": "lakshmi@in.com"
+    },
+    {
+      "firstName": "Priya",
+      "lastName": "A",
+      "email": "priya@in.com"
+    },
+    {
+      "firstName": "Raji",
+      "lastName": "G",
+      "email": "raji@in.com"
+    },
+    {
+      "firstName": "Meera",
+      "lastName": "C",
+      "email": "meera@in.com"
+    },
+    {
+      "firstName": "Hari",
+      "lastName": "S",
+      "email": "hari@in.com"
+    },
+    {
+      "firstName": "Arun",
+      "lastName": "V",
+      "email": "arun@in.com"
+    },
+    {
+      "firstName": "Karthi",
+      "lastName": "P",
+      "email": "karthi@in.com"
+    },
+    {
+      "firstName": "Kathir",
+      "lastName": "Nr",
+      "email": "kathir@in.com"
+    },
+    {
+      "firstName": "Ganesh",
+      "lastName": "G",
+      "email": "ganesh@in.com"
+    },
+    {
+      "firstName": "Sathya",
+      "lastName": "V",
+      "email": "sathya@in.com"
+    },
+    {
+      "firstName": "Pooja",
+      "lastName": "C",
+      "email": "pooja@in.com"
+    },
+    {
+      "firstName": "Bharathi",
+      "lastName": "A",
+      "email": "bharathi@in.com"
+    },
+    {
+      "firstName": "Mani",
+      "lastName": "P",
+      "email": "mani@in.com"
+    },
+    {
+      "firstName": "Nithya",
+      "lastName": "V",
+      "email": "nithya@in.com"
+    }
+  ],
+
+
+
+  "user": [
+    {
+      "activeUser": "1000",
+      "id": "4e34"
+    },
+    {
+      "frequentlyUsedProduct": "Vendormate",
+      "id": "48e8"
+    },
+    {
+      "activeProduct": "5",
+      "id": "7bdd"
+    },
+    {
+      "minimalUsedProduct": "E-pay",
+      "id": "d156"
+    },
+    {
+      "appLoadingTime": "100 ms",
+      "id": "17ff"
+    }
+  ],
+  "share": [
+    {
+      "id": "1220",
+      "dataShare": "Data Share Name 2",
+      "objectShare": "Object Share Name 2",
+      "account": "Account 2"
+    },
+    {
+      "id": "1307",
+      "dataShare": "Data Share Name 2",
+      "objectShare": "Object Share Name 2",
+      "account": "Account 3"
+    }
+  ],
+  "dataShare": [
+    {
+      "name": [
+        "Demand Insights",
+        "vendormate"
+      ],
+      "id": "434e"
+    }
+  ],
+  "Demand Insights": [
+    {
+      "dbname": "Alternate Data Partner",
+      "id": "4341"
+    }
+  ],
+  "vendormate": [
+    {
+      "dbname": "Alternate Data Partners",
+      "id": "69a2"
+    }
+  ]
+}

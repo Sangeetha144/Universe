@@ -1,0 +1,148 @@
+
+
+
+
+
+
+ <div class="full">
+  <div  class="card-container" >
+    <mat-card class="example-card1">
+     
+       
+      <p  class="user">Active Users</p>
+   
+  <mat-card-content class="c1" >
+    <img src=" /assets/cardimg/Group 399.png" height="40px" width="50px">
+    <p class="con">1000</p>
+  </mat-card-content >
+</mat-card>
+<mat-card class="example-card2">
+ 
+      <p class="product">Active Product</p>
+   
+  <mat-card-content class="c2">
+    <img src=" /assets/cardimg/Group-1.png" height="45px" width="45px">
+    <p class="con">9</p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="example-card3">
+ 
+      <p class="Fup">Frequently used product</p>
+   
+  <mat-card-content class="c3">
+    <img src=" /assets/cardimg/Group 422.png" height="40px" width="50px">
+    <p class="con">Vendormate</p>
+  </mat-card-content>
+</mat-card>
+<mat-card class="example-card4">
+ 
+      <p class="Mup">Minimal used product</p>
+   
+  <mat-card-content class="c4">
+    <img src="/assets/cardimg/Group.png" height="40px" width="50px">
+    <p class="con">E-Pay</p>
+  </mat-card-content>
+</mat-card>
+<!-- <mat-card class="example-card5">
+ 
+      <p class="Alt">App Loading time</p>
+   
+  <mat-card-content class="c5">
+    <img src=" /assets/cardimg/Vector.png" height="40px" width="50px">
+    <p class="con">100ms</p>
+  </mat-card-content>
+</mat-card> -->
+  </div>
+  <div class="content-container">
+      
+
+    <div class="top">
+      <div class="1">
+        <div class="example-button-container">
+          <a routerLink="/landing">
+          <button mat-raised-button color="primary" style="padding: 10px; margin-top: 10px;">
+            <mat-icon style="position: relative; top:-2px;" >home</mat-icon>Back to Home
+          </button>
+          </a>
+        </div>
+      </div>
+      <div class="top2">
+        <div class="date">
+          <mat-form-field class="example-form-field" style="width: 200px" appearance="outline">
+            <mat-label>From</mat-label>
+            <input
+              matInput
+              [matDatepicker]="fromDatePicker"
+              placeholder="From date"
+              name="fromDate"
+              [max]="maxDate"
+              [value]="yesterdayDate.toISOString().split('T')[0]"
+              (dateChange)="addEvent('change', $event)"
+              class="input"
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="fromDatePicker"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #fromDatePicker></mat-datepicker>
+          </mat-form-field>
+    
+          <mat-form-field class="example-form-field" style="width: 200px" appearance="outline">
+            <mat-label>To</mat-label>
+            <input
+              matInput
+              [matDatepicker]="toDatePicker"
+              placeholder="To date"
+              name="toDate"
+              [min]="minDate"
+              [value]="date.value"
+              [max]="maxDate"
+            />
+            <mat-datepicker-toggle
+              matSuffix
+              [for]="toDatePicker"
+              class="date"
+            ></mat-datepicker-toggle>
+            <mat-datepicker #toDatePicker></mat-datepicker>
+          </mat-form-field>
+        </div> 
+        <div class="btn-group">
+          <button mat-raised-button color="primary"><mat-icon>filter_alt</mat-icon>Apply</button>
+          <button mat-raised-button  color="warn" (click)="clearAll()" ><mat-icon>clear</mat-icon>Clear </button>
+          <mat-menu #exportMenu="matMenu">
+            <button mat-menu-item class="item" >Pdf</button>
+            <button mat-menu-item class="item" >Excel</button>
+          </mat-menu>
+          
+          <button mat-raised-button color="primary" [matMenuTriggerFor]="exportMenu" class="export-button">
+            <span class="part">Export</span> <mat-icon class="export">arrow_drop_down</mat-icon>
+          </button>
+          
+        </div>
+      </div>
+  
+    </div>
+   <div class="middle">
+    <div class="pie">
+      <app-pie-chart></app-pie-chart>
+    </div>
+    <!-- <div class="empty">
+    
+    </div> -->
+   </div>
+   <!-- <div class="last">
+    <div class="one" >
+    
+    </div>
+    <div class="two">
+     
+    </div>
+    <div class="three">
+    
+    </div>
+   </div>
+    -->
+
+  </div>
+
+ </div>

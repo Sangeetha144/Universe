@@ -1,0 +1,136 @@
+
+h3{
+    font-weight: bold;
+    color: black;
+position: relative;
+top:-6px;
+
+}
+.con{
+  font-family: "Poppins", sans-serif;
+}
+ 
+h1{
+ margin: 0px;
+ text-align: center;
+ letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 800;
+  position: relative;
+  top:-40px
+
+}
+.title{
+    height: 20px;
+}
+mat-checkbox{
+    position: relative;
+    top:-30px;
+}
+// ::ng-deep .mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-accent .mdc-checkbox.mdc-checkbox__native-control:enabled:indeterminate ~ .mdc-checkbox__background,
+// .mat-mdc-checkbox.mat-accent .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate = true]:enabled ~ .mdc-checkbox__background{
+// background-color: white !important; 
+// border-color: transparent !important;
+// }
+mat-form-field{
+    width:255px;
+   position: relative;
+   top:-10px;
+}
+ 
+.mat-mdc-checkbox{
+    margin: 0px;
+}
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.custom-checkbox {
+  margin-right: 8px; /* Adjust spacing between checkbox and label */
+}
+
+.checkbox-label {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 24px; /* Adjust line height to vertically center the text with the checkbox */
+}
+
+
+
+p{
+    margin: 0px;
+
+font-family: "Poppins", sans-serif;
+font-size: 13px;
+
+}
+ .example-section{
+    position: relative;
+    top:-15px;
+
+ }
+ 
+ 
+.btn-share,
+.btn-cancel {
+  color: white;
+  height: 38px;
+  width: 120px; /* Adjusted width for buttons */
+  border: none;
+  font-size: 15px;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px;
+  border-radius: 8px;
+ 
+  padding: 7px;
+ }
+ 
+.btn-share {
+  background-color: #19B220;
+  margin-left: 20px;
+}
+ 
+.btn-cancel {
+  
+  margin-right: 20px;
+}
+ 
+// .button-group {
+//   text-align: center;
+//   position: relative;
+//   top:-40px /* Added to center the buttons horizontally */
+// }
+.button-group button {
+    display: inline-flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+#customrole{
+    position: relative;
+    top:-30px;
+    left:18px;
+    
+}
+#customadd{
+  position: relative;
+  right:10px;
+  top:5px;
+}
+// .mat-mdc-checkbox{
+//   font-family: "Poppins", sans-serif;
+// }
+.mat-mdc-raised-button ,.mat-basic{
+  --mdc-protected-button-container-color:black !important;
+  --mdc-protected-button-label-text-color:white !important;
+}
+.mat-mdc-raised-button ,.mat-warn{
+  --mdc-protected-button-container-color:grey !important;
+  --mdc-protected-button-label-text-color:white !important;
+}
+::ng-deep .snackbar  {
+  --mdc-snackbar-container-color: green !important;
+ }
+ 

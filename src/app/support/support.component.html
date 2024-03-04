@@ -1,0 +1,41 @@
+<div class="icon-container" [class.show-icons]="showIcons">
+
+    <button mat-icon-button class="message-icon" (click)="toggleIcons()" *ngIf="!showIcons">
+      <!-- Show the blue icon when showIcons is false -->
+      <mat-icon class="blue-icon"><img src="/assets/supporticons/icon2.png" height="25px"></mat-icon>
+    </button>
+
+    <button mat-icon-button class="clear-icon" *ngIf="showIcons" (click)="toggleIcons()">
+      <mat-icon>clear</mat-icon>
+    </button>
+    <div class="icon-list" *ngIf="showIcons">
+        <mat-icon class="ic"
+        #tooltip="matTooltip"
+        matTooltip="Documentation"
+        matTooltipHideDelay="200"
+        matTooltipPosition='left'
+        matTooltipClass="basic-tooltip">
+        <img src="/assets/supporticons/icon1.png" height="25px"></mat-icon>
+        <mat-icon class="ic"
+        #tooltip="matTooltip"
+        matTooltip="Help"
+        matTooltipHideDelay="200"
+        matTooltipPosition='left'
+        matTooltipClass="basic-tooltip"> 
+        <img src="/assets/supporticons/icon5.png" height="25px"></mat-icon>
+        <mat-icon class="ic"  #tooltip="matTooltip"
+        matTooltip="FAQ"
+        matTooltipHideDelay="200"
+        matTooltipPosition='left'
+        matTooltipClass="basic-tooltip">
+        <img src="/assets/supporticons/icon3.png" height="22px"></mat-icon>
+        <mat-icon class="ic"  #tooltip="matTooltip"
+        matTooltip="Take a Tour"
+        matTooltipHideDelay="200"
+        matTooltipPosition='left'
+        matTooltipClass="basic-tooltip">
+        <img src="/assets/supporticons/icon4.png" height="24px"></mat-icon>
+        <!-- Add more icons as needed -->
+      </div>
+  </div>
+  

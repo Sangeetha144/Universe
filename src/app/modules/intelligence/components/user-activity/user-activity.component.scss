@@ -1,0 +1,111 @@
+#container{
+   
+  margin-top:0px;
+  font-family: "Poppins", sans-serif;
+  // overflow: hidden;
+  //  background-color: #EFF4F7;
+
+}
+#row1{
+display: flex;
+padding-top: 15px;
+justify-content: space-between;
+}
+.back{
+margin-top: 10px;
+padding-top: 20px;
+padding-left: 20px;
+// background-color: #EFF4F7;
+}
+#donutchart1{
+  width: 200px;
+  height: 300px;
+ 
+  padding-left: -50px;
+
+}
+#donutchart2 {
+width: 200px;
+height: 300px;
+padding-left: -15px;
+
+
+
+
+}
+.heatmap{
+position: relative;
+
+padding-left: -5px;
+padding-right: 50px;
+}
+
+// If you want to apply specific styles to each chart individually, you can use their IDs:
+
+
+mat-card{
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h3{
+  font-weight: bold;
+  color: rgb(5, 97, 137);
+}
+.treemap-card {
+  width: 280px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  /* Adjust margin as needed */
+  position: relative;
+ 
+
+}
+.treemap{
+  height: 200px;
+  width: 200px;
+  padding-left: 20px;
+ 
+
+}
+.ch1{
+  height: 300px;
+  width: 280px;
+ 
+ 
+ 
+
+}
+.ch2{
+  height: 300px;
+  width: 280px;
+ 
+
+}
+.funnel{
+
+  height: 300px;
+ 
+ 
+  width: 280px;
+ 
+}
+
+#funnelchart{
+padding-right: 30px;
+
+
+
+}
+
+#heatmap-chart{
+margin-left: 15px;
+margin-top: 15px;
+width: 1200px;
+
+
+}
+.loading-spinner-container{
+position: relative;
+bottom: -230px;
+right: -640px;
+}

@@ -1,0 +1,146 @@
+ 
+#container{
+  background-image: url('/assets/logos/bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 598px;
+}
+.logo{
+  padding-left: 77px;
+}
+.cancel-icon {
+  font-size: 24px; // Adjust the font size as needed
+  // To make it a circle
+  // Adjust the color as needed
+  color: rgb(17, 97, 172); // Adjust the color of the icon as needed
+ 
+ 
+ 
+ 
+ 
+ 
+}
+.cancel{
+  position: relative;
+  top: -30px;
+  right: -20px;
+}
+ 
+.form{
+  height: 250px;
+  width: 370px;
+  background: linear-gradient(to bottom right, #004680 0%, #33aad3 100%);
+  border-radius: 10px;
+  position: relative;
+  right: -30px;
+  top: -20px;
+}
+ 
+.loginbg{
+  height: 400px;
+  width: 480px;
+  background-color:rgba(255, 255, 255, 0.5) ;
+  position: relative;
+  right: -400px;
+  bottom: -100px;
+  border-radius: 10px;
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  // background-color: rgba(255, 255, 255, 0.5);
+  // height: 400px;
+  // width: 400px;
+}
+    .intuser{
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin-top: 0px;
+    font-weight:400;
+    // text-transform: uppercase;
+ 
+    }
+ 
+    .frm{
+        padding-left: 60px;
+       
+    }
+    .login{
+   
+        width: 430px;
+        height: 350px;
+        background-color: white;
+        border-radius: 10px;
+        position: relative;
+        right: -400px;
+        bottom: -150px;
+        // background-color: rgba(255, 255, 255, 0.5);
+    }
+    .btn_login{
+      background: linear-gradient(to bottom right, #ff6801 0%, #ff9700 100%);
+        border: none;
+        height: 35px;
+        width: 100px;
+        color:#f9f9f9;
+        position: relative;
+        right: -62px;
+     
+        top:-10px ;
+       
+       
+    }
+ 
+    .btn_cancel{
+      background: linear-gradient(to bottom right, #5c5757 0%, #848481 100%);
+      width: 100px;
+      right: -45px;
+     
+        top:-10px ;
+        color:#f9f9f9;
+     
+     
+    }
+    .icn{
+        color:linear-gradient(to top right, #0a4a7a 45%, #f49f15 90%);
+    }
+   
+.reg-link {
+    text-align:end;/* Center-align the login link */
+ 
+    padding: 5px;
+    color:#02477e;
+  }
+ 
+.heading {
+   
+    width: 400px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    position: relative;
+    right:10px;
+ 
+  }
+ 
+.frm {
+    padding-left: 30px;
+  }
+ 
+.icn {
+    color: linear-gradient(to top right, #0a4a7a 45%, #f49f15 90%);
+  }
+ 
+  .reg-link {
+    text-align: end;
+    padding: 5px;
+    color: #02477e;
+ 
+    @media screen and (max-width: 768px) {
+      text-align: center; /* Center-align on smaller screens */
+    }
+  }
+ 

@@ -1,0 +1,207 @@
+.registration {
+  background: linear-gradient(to bottom right, #004780 0%, #ff6901 100%);
+    width: 345px;
+    height: 400px;
+    border-radius: 10px;
+  position: relative;
+ top:-11px;
+  
+  }
+.frm{
+  position: relative;
+  top:-15px;
+}
+  
+  .heading {
+ 
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+ 
+  }
+  
+  .partneruser {
+  letter-spacing: 2px;
+
+  font-size: 18px;
+
+  font-weight: 400;
+  }
+  
+  #content {
+ 
+    // padding-left: 13.5cm;
+   
+    height:100%;
+background-position: center;
+    background-image: url('/assets/logos/bg.png');
+    background-size:cover
+  }
+#first{
+  background-color: white;
+  width:400px;
+  height:490px;
+  position: relative;
+  border-radius: 10px;
+  left:440px;
+  top:55px;
+}
+// #shade{
+//  background-color: rgba(255,255,255,0.5);
+// // opacity: 0.5 !important;
+//   width:450px;
+//   height:540px;
+//   position: relative;
+//   border-radius: 10px;
+//   left:410px;
+//   top:20px;
+  
+// }
+  
+  .btn {
+    background: linear-gradient(to right, #014881 0%, #30a4cd 100%);
+    border: none;
+    height: 40px;
+
+    color: #f9f9f9;
+  
+    position: relative;
+   
+   top:-9mm;
+    /* Equal width for both buttons */
+   
+  }
+  
+  .btn-cancel {
+  
+    height: 40px;
+    width: 20px; /* Adjusted width for buttons */
+  
+
+    position: relative;
+    left:-25px;
+   top:-9mm;
+  }
+  .mat-mdc-raised-button ,.mat-danger{
+    --mdc-protected-button-container-color:grey !important;
+    --mdc-protected-button-label-text-color:white !important;
+   
+}
+  
+
+  .logo{
+    text-align: center;
+  }
+  
+  .name-fields {
+    display: flex;
+    justify-content:space-between;/* Places First Name and Last Name in the same line */
+  
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between; /* Align buttons evenly */
+
+  }
+  
+  .eye{
+    border:none;
+    background: transparent;
+
+  }
+  .eye mat-icon{
+    font-size: 20px;
+  }
+  
+  .login-link {
+    text-align:center;/* Center-align the login link */
+
+   
+    position: relative;
+    top:-25px;
+  }
+  .login-link a{
+    text-decoration: none;
+  }
+  mat-form-field{
+    height:68px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  .registration {
+    width: 90%; /* Adjust as needed */
+    margin: auto; /* Center the form */
+  }
+  
+  .heading, .btn, .btn-cancel {
+    width: 100%;
+  }
+  
+  .btn, .btn-cancel {
+    margin-top: 10px;
+  }
+  
+ 
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .btn, .btn-cancel {
+    width: 100%;
+  }
+  
+  .name-fields {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .name-fields mat-form-field {
+    width: 100%;
+  }
+  }
+  
+  /* For all screen sizes (including larger screens) */
+  @media only screen and (min-width: 1px) {
+  .registration {
+    max-width: 500px; /* Set the maximum width */
+    margin: auto; /* Center the form */
+  }
+  
+  .heading, .btn, .btn-cancel {
+    width: 100%;
+  }
+  
+  .btn, .btn-cancel {
+    margin-top: 10px;
+  }
+  
+  .frm {
+    padding-left: 20px;
+  }
+  
+  .button-group {
+    justify-content: space-between; /* Align buttons evenly */
+    margin-top: 20px;
+  }
+  
+  .btn, .btn-cancel {
+    width: 220px; /* Adjust as needed */
+  }
+  
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .name-fields mat-form-field {
+    width: calc(50% - 5px); /* Adjust for gap between fields */
+  }
+  }
+  
+  ::ng-deep .snackbar  {
+   --mdc-snackbar-container-color: green !important;
+  }
+  

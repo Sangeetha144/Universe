@@ -1,0 +1,45 @@
+
+.division {
+  display: grid;
+  place-items: center; /* Horizontally and vertically center */
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+}
+ 
+.center-buttons {
+  display: flex;
+  flex-direction: row; /* Stack buttons vertically */
+} 
+.logo{
+  margin-top: 150px;
+}
+  
+  .internal-user-button {
+    background: linear-gradient(to top, #034a82 0%, #31a5ce 100%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+   width:200px;
+  
+  }
+  
+  .partner-login-button {
+    background: linear-gradient(to bottom, #ff9700 40%, #ff6104 79%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; 
+    font-size: 17px;
+    width:200px;
+  
+  }
+  
+  
+  

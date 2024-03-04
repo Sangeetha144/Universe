@@ -1,0 +1,301 @@
+// $color_1: #333;
+// $color_2: #007bff;
+// $background-color_1: #eee;
+// $background-color_2: #f5f5f5;
+ 
+// /* Mixin for hover background color */
+// /* Target the entire mat-sidenav-container */
+// /* Target the mat-sidenav element */
+// /* Target the mat-nav-list within mat-sidenav */
+// /* Target anchor tags within mat-sidenav */
+// /* Customize "Demand Insights" color and arrow position here */
+// .mat-sidenav {
+// 	a {
+// &:hover {
+// 			background-color: $background-color_1;
+// 		}
+// 		text-decoration: none;
+// 		color: $color_1;
+// 		padding: 10px;
+// 		display: flex;
+// 		align-items: center;
+// 	}
+// 	width: 250px;
+// 	background-color: $background-color_2;
+// 	.mat-nav-list {
+// 		padding: 0;
+// 	}
+// 	a[routerLink*="/demand-insights"] {
+// 		color: $color_2;
+// 		.mat-icon {
+// 			float: right;
+// 		}
+// 	}
+// }
+// .mat-sidenav-container {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	font-family: "Poppins", sans-serif;
+// }
+// .myhome {
+// 	.mat-icon {
+// 		margin-top: 15px;
+// 	}
+// }
+// .insight {
+// 	background: linear-gradient(to top right, #0a4a7a 45%, #f49f15 90%);
+// }
+// .custom-dropdown {
+// 	margin-left: 40px;
+// 	font-weight: bolder;
+// 	width: 200px;
+// }
+// .tab {
+// 	font-weight: bold;
+// }
+// .custom-span-bold {
+// 	font-weight: 580;
+// 	.mat-icon {
+// 		font-size: large;
+// 	}
+// }
+// .custom-sub-sub-nav-item {
+// 	margin-left: 25px;
+// }
+// .custom-nav-item {
+// 	display: flex;
+// 	align-items: center;
+// }
+// .custom-sub-dropdown {
+// 	width: 200px;
+// }
+
+// .mat-sidenav-container {
+//     width: 250px !important;
+//     position: absolute !important;
+//     top: 70px;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+// .link {
+//     color: blue;
+//     cursor: pointer;
+//   }
+ 
+//   .link:hover {
+//     text-decoration: underline;
+//   }
+//   mat-icon{
+// 	position: relative;
+// 	top:5px;
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mixin for hover background color */
+.mat-sidenav a:hover {
+    background-color: #eee; /* Adjust hover color */
+  }
+ 
+  /* Target the entire mat-sidenav-container */
+.mat-sidenav-container {
+    width: 250px !important;
+    position: absolute !important;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  /* Target the mat-sidenav element */
+  .mat-sidenav {
+    width: 250px;
+    background-color: #f5f5f5; /* Customize if needed */
+  }
+ 
+  /* Target the mat-nav-list within mat-sidenav */
+  .mat-sidenav .mat-nav-list {
+    padding: 0;
+  }
+ 
+  /* Target anchor tags within mat-sidenav */
+  .mat-sidenav a {
+    text-decoration: none;
+    color: #333; /* Customize if needed */
+    padding: 10px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+  }
+ 
+  /* Customize "Demand Insights" color and arrow position here */
+  .mat-sidenav a[routerLink*="/demand-insights"] {
+    color: #007bff; /* Same blue color as in the image */
+  }
+ 
+  .mat-sidenav a[routerLink*="/demand-insights"] .mat-icon {
+    float: right; /* Position arrow on the right */
+  }
+  .myhome .mat-icon{
+    margin-top: 15px;
+  }
+ 
+ 
+  .custom-dropdown{
+    margin-left: 40px;
+    font-weight:bolder;
+  }.tab{
+    font-weight: bold;
+  }
+  .custom-span-bold {
+    font-weight: 580;
+  }
+  .custom-span-bold .mat-icon{
+    font-size: large;
+ 
+  }
+  .custom-sub-sub-nav-item {
+    margin-left: 25px;
+  }
+  .custom-nav-item {
+    display: flex;
+    align-items: center;
+  }.custom-dropdown {
+    width: 200px;
+  }
+ 
+  .custom-sub-dropdown {
+    width: 200px;
+  }
+ 
+ 
+ 
+ 
+ 
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+   
+   
+  }
+  .custom-sub-sub-icon{
+    height: 20px;
+    width: 20px;
+  }
+  .link {
+    color: blue;
+    cursor: pointer;
+  }
+ 
+  .link:hover {
+    text-decoration: underline;
+  }
+  .mydb{
+    margin-left:-45px ;
+    font-weight: 500;
+  }
+  .share {
+    background: linear-gradient(to top right, #0a4a7a 45%, #f49f15 90%);
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: center;
+   
+ 
+   
+  }
+  .two{
+    background-color: lightblue;
+  }
+  .three{
+    background-color: lightblue;
+   
+  }
+  .custom-icon{
+    height: 20px;
+    width: 20px;
+  }
+  .four{
+    height: 21px;
+    width: 21px;
+  }
+  .homeu{
+    height: 21px;
+    width: 21px;
+  }
+  .shareu{
+    height: 19px;
+    width: 19px;
+   align-items: center;
+  }
+  .mytable{
+    margin-right: 20px;
+  }
+  .tab{
+    margin-right: 20px;
+  }
+  .custom-right-menu {
+    margin-left: 30px;
+  }
+  .custom-partner-icon {
+    font-size: 16px;
+    vertical-align: middle; 
+  }
+  .data-share-container {
+    margin-left: auto;
+    background: linear-gradient(to top right, #0a4a7a 45%, #f49f15 90%); /* Moves the container to the right */
+  }
+  mat-icon{
+    	position: relative;
+    	top:2px;
+      right:1px;
+      }
+ 
+      .loading-spinner{
+        margin-left: 100px;
+      
+      }
+ 
+ 
+ 
+ 
+      .custom-sidenav-container{
+        height:800px;
+      }
+      .custom-white {
+        color: white; 
+       
+      }
+      .thank{
+        margin-left: 30px;
+        color: white;
+      }
+      .custom-nav-item:hover .custom-span,
+.custom-nav-item:hover .custom-icon {
+  color: black;
+}
+
+      
+ 
+ 
+ 
+ 

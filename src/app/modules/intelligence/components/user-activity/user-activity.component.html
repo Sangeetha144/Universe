@@ -1,0 +1,81 @@
+<div class="back">
+
+  <a routerLink="/intelligence/intelligence"><button mat-raised-button color="primary"><mat-icon>arrow_back</mat-icon></button></a> 
+
+ </div>
+  <div id="container">
+      <!-- Display loading spinner if isLoading is true -->
+      <div *ngIf="isLoading" class="loading-spinner-container">
+        <mat-spinner diameter="50"></mat-spinner>
+      </div>
+     
+    <div *ngIf="!isLoading">
+     
+    <div id ="row1">
+        <div class="treemap">
+            <mat-card class="treemap-card"><apx-chart
+                [series]="TreemapChartOptions.series"
+                [chart]="TreemapChartOptions.chart"
+                [dataLabels]="TreemapChartOptions.dataLabels"
+                [plotOptions]="TreemapChartOptions.plotOptions"
+                [title]="TreemapChartOptions.title"
+                [colors]="TreemapChartOptions.colors"
+              ></apx-chart>
+            </mat-card>
+        </div>
+    <div id="donutchart1">
+        <mat-card class="ch1">
+     
+            <apx-chart [series]="donutChart1Options.series" [chart]="donutChart1Options.chart"
+                [labels]="donutChart1Options.labels" [colors]="donutChart1Options.colors"
+                [title]="donutChart1Options.title" [legend]="donutChart1Options.legend" [dataLabels]="donutChart1Options.dataLabels"
+                 >
+            </apx-chart>
+        </mat-card>
+    </div>
+     
+    <div id="donutchart2">
+        <mat-card class="ch2">
+     
+            <apx-chart [series]="donutChart2Options.series" [chart]="donutChart2Options.chart"
+                [labels]="donutChart2Options.labels" [colors]="donutChart2Options.colors"
+                [title]="donutChart2Options.title" [legend]="donutChart2Options.legend" [dataLabels]="donutChart2Options.dataLabels">
+            </apx-chart>
+        </mat-card>
+       
+     
+       
+    </div>
+    <div id="funnelchart">
+        <mat-card class="funnel">
+            <apx-chart
+             [series]="funnelChartOptions.series"
+             [chart]="funnelChartOptions.chart"
+             [title]="funnelChartOptions.title"
+             [dataLabels]="funnelChartOptions.dataLabels"
+             [plotOptions]="funnelChartOptions.plotOptions"
+            [xaxis]="funnelChartOptions.xaxis"
+        [colors]="funnelChartOptions.colors"
+        [legend]="funnelChartOptions.legend"></apx-chart>
+    </mat-card>
+       
+    </div>
+     
+     </div>
+   
+    <div id="heatmap-chart">
+      <mat-card class="heatmap">
+        <apx-chart
+          [series]="heatmapChartOptions.series"
+          [chart]="heatmapChartOptions.chart"
+          [xaxis]="heatmapChartOptions.xaxis"
+          [dataLabels]="heatmapChartOptions.dataLabels"
+          [colors]="heatmapChartOptions.colors"
+          [title]="heatmapChartOptions.title"
+          [plotOptions]="heatmapChartOptions.plotOptions">
+         
+        </apx-chart></mat-card>
+      </div>
+   
+    </div>
+      </div>

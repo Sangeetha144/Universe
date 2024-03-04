@@ -1,0 +1,55 @@
+<div >
+    <mat-toolbar class="header">
+
+      <div class="logo-container" >
+        <a routerLink="/landing"> 
+        <img src="/assets/logos/logo.png" width="165px" />
+        </a>
+      </div>
+      <div class="right-nav">
+      
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>account_circle</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="logout()">
+            <mat-icon>logout</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </div>
+    </mat-toolbar>
+     
+<!--         
+    
+        <mat-drawer-container style="width:180px;background-color: white;"  >
+          <mat-drawer #drawer opened="false" mode="side" position="start" style="background-color:#f5f7f6 ;" >
+          <mat-nav-list>
+              <mat-list-item>
+                <button mat-button><mat-icon>notifications</mat-icon> Notifications </button>
+              </mat-list-item>
+              <mat-list-item>
+                <button mat-button>  <mat-icon>mail</mat-icon>Mail</button>
+              </mat-list-item>
+              <mat-list-item>
+                <button mat-button> <mat-icon>help</mat-icon>Help </button>
+              </mat-list-item>
+               <mat-list-item>
+                <button mat-button> <mat-icon>computer</mat-icon> </button>
+              </mat-list-item> 
+              <mat-list-item>
+                <button mat-button> <mat-icon>apps</mat-icon>Other Apps </button>
+              </mat-list-item>
+             </mat-nav-list>
+          </mat-drawer>
+          <mat-drawer-content >
+              <div style="height: 600px;">
+      
+            
+    
+                  </div>
+                  
+          </mat-drawer-content>
+      </mat-drawer-container>
+         -->
+    </div>

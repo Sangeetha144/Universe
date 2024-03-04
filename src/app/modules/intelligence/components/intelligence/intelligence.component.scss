@@ -1,0 +1,155 @@
+.parent{
+    display: flex;
+    gap:1%;
+  
+  
+}
+.slicename{
+    margin-left: 21px;
+    margin-top: 15px;
+   
+
+    
+}
+h1{
+   
+    color:#014881;
+   padding:5px;
+   font-weight: bold;
+}
+.con{
+    position: relative;
+    margin:20px;
+    font-family: "Poppins", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+}
+button{
+    margin-top: 10px;
+    
+}
+.spin{
+    margin-left:600px;
+    margin-top: 100px;
+}
+.icon {
+  position: absolute;
+  top: calc(50% - 12px); /* Adjust this value according to your icon size */
+  right: -1px; /* Adjust this value as needed */
+  color:grey;
+}
+    mat-form-field{
+        height:70px;
+    }
+
+    .date{
+        display: flex;
+        gap:3%;
+        
+      }
+      
+      .card-container{
+        display: flex;
+    margin-left: 185px;
+        margin-top: 20px;
+      }
+     
+       .user{
+        background-color: #EAEAD9;
+        font-weight: 550;
+        padding: 5px;
+       
+       }
+    
+         .Fup{
+      background-color: #EFF4F5;
+      font-weight: 550;
+      padding: 5px;
+         }
+         
+         .Alt{
+          background-color: #D1EFF5;
+          font-weight: 550;
+          padding: 5px;
+         }
+     
+          .example-card1 {
+            width:250px;
+            height: 95px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-bottom: 20px;
+            margin-left: 100px;
+         
+           background-color: #CECC80
+          }
+         
+          .example-card2 {
+            width:250px;
+            height: 95px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-bottom: 20px;
+         margin-left: 100px;
+            background-color: #90B3BD
+          }
+         
+    
+         
+         
+         
+         
+            .number {
+                margin-left: 50px;
+                font-weight: 550;
+                font-size: 30px;
+                color: white;
+                position: absolute;
+                top: 50px;
+           
+              }
+              .number1 {
+                margin-left: 50px;
+                font-weight: 550;
+                font-size: 30px;
+                color: white;
+             
+              position: absolute;
+              top: 52px;
+         
+           
+              }
+ 
+      
+      .mat-mdc-raised-button.mat-warn{
+        --mdc-protected-button-container-color:grey !important;
+        --mdc-protected-button-label-text-color:white !important;
+
+     
+      }  
+
+
+  
+      .btn-group{
+        display: flex;
+     gap:5%;
+     margin-left: 10px;
+     
+      }
+      .export{
+        position: relative;
+        left: 55px;
+      }
+      .part{
+        position: relative;
+        left: -18px;
+       
+      }
+.item
+      {
+    margin: 0px;
+      }
+      .mat-mdc-menu-item{
+        min-height: 25px;
+       padding-right: 5px !important;
+     
+      }
+     

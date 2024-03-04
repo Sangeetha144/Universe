@@ -1,0 +1,33 @@
+$color_1: white;
+$background-color_1: rgb(12,90,168);
+
+mat-card {
+	margin: 2%;
+	font-family: "Poppins", sans-serif;
+}
+button {
+	margin: 2px;
+}
+th {
+	background-color: $background-color_1 !important;
+	color: $color_1;
+}
+.search{
+	position: relative;
+	right:39px;
+	top:17px;
+}
+mat-form-field{
+	margin-left: 900px;
+}
+.visible{
+	color:rgb(12,90,168);
+	width: 24px;
+}
+.page{
+	color: white;
+}
+.mat-header-cell.mat-sort-header {
+	color: white; 
+  }
+	
