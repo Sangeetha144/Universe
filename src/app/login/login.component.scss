@@ -1,12 +1,15 @@
+
  
 #container{
-  background-image: url('/assets/logos/bg.png');
+  background-image: url('/assets/logos/bg.jpg');
   background-size: cover;
   background-position: center;
-  height: 598px;
+  height: 585px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 .logo{
-  padding-left: 77px;
+  padding-left: 57px;
 }
 .cancel-icon {
   font-size: 24px; // Adjust the font size as needed
@@ -28,22 +31,22 @@
  
 .form{
   height: 250px;
-  width: 370px;
-  background: linear-gradient(to bottom right, #004680 0%, #33aad3 100%);
-  border-radius: 10px;
+  width: 300px;
+ 
+ 
   position: relative;
-  right: -30px;
-  top: -20px;
+ 
+ 
 }
  
 .loginbg{
   height: 400px;
   width: 480px;
-  background-color:rgba(255, 255, 255, 0.5) ;
+  background-color:rgba(255, 255, 255, 0.85) ;
   position: relative;
   right: -400px;
   bottom: -100px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 #content{
   display: flex;
@@ -57,9 +60,9 @@
   // width: 400px;
 }
     .intuser{
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     font-size: 20px;
-    margin-top: 0px;
+   
     font-weight:400;
     // text-transform: uppercase;
  
@@ -71,25 +74,27 @@
     }
     .login{
    
-        width: 430px;
-        height: 350px;
-        background-color: white;
-        border-radius: 10px;
-        position: relative;
-        right: -400px;
-        bottom: -150px;
+        width: 400px;
+        height: 400px;
+        background-color: rgba(255,255,255,0.85);
+        border-radius: 5px;
+         position: relative;
+         right: -430px;
+         bottom: -80px;
+       
+        margin:20px 20px 20px 20px !important;
         // background-color: rgba(255, 255, 255, 0.5);
     }
     .btn_login{
       background: linear-gradient(to bottom right, #ff6801 0%, #ff9700 100%);
         border: none;
         height: 35px;
-        width: 100px;
+        width: 130px;
         color:#f9f9f9;
         position: relative;
-        right: -62px;
+        right: -132px;
      
-        top:-10px ;
+       
        
        
     }
@@ -119,15 +124,17 @@
    
     width: 400px;
     text-align: center;
-    padding-top: 20px;
-    color: white;
+   
+    color: black;
     position: relative;
-    right:10px;
+    right:5px;
+    top: -5;
+ 
  
   }
  
 .frm {
-    padding-left: 30px;
+    padding-left: 0px;
   }
  
 .icn {
@@ -142,5 +149,19 @@
     @media screen and (max-width: 768px) {
       text-align: center; /* Center-align on smaller screens */
     }
+  }
+  ::ng-deep .mat-mdc-text-field-wrapper {
+    width: 100% !important;
+    height: 40px !important;
+    background-color: transparent !important;
+  }
+  ::ng-deep .mdc-text-field .mdc-floating-label {
+    height:35px !important;
+    background-color: transparent !important;
+   
+  }
+ 
+  ::ng-deep input#mat-input-0{
+    background-color: transparent !important;
   }
  

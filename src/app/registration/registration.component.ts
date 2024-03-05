@@ -50,21 +50,39 @@ export class RegistrationComponent {
           this.router.navigate(['/login'])
 
       }
+      else{
+        this.snackbar.open('Fill all the fields', '', {
+          duration: 2000, // Duration in milliseconds
+          horizontalPosition: 'right',
+          verticalPosition: 'top',
+          panelClass:['snackbars']
+        });
+      }
      
     }
 
       
-  onCancel(): void {
-    this.registrationForm.reset(); // Reset the form
-    Object.keys(this.registrationForm.controls).forEach(key => { 
-      this.registrationForm.get(key)?.setErrors(null);
-    });
-  }
+    onCancel(): void {
+      this.registrationForm.reset();
+      // Reset the form controls' errors
+      Object.keys(this.registrationForm.controls).forEach(key => {
+        const control = this.registrationForm.get(key);
+        if (control) {
+          control.setErrors(null);
+          control.markAsPristine();
+          control.markAsUntouched();
+        }
+      });
+      // Mark the form as invalid
+      this.registrationForm.setErrors({ 'invalid': true });
+      
+    }
  
   hidePassword: boolean = true;
 hideConfirmPassword: boolean = true;
  
 togglePasswordVisibility(): void {
+ 
   this.hidePassword = !this.hidePassword;
 }
  

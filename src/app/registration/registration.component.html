@@ -13,7 +13,7 @@
         <p class="partneruser">Partner Registration Form</p>
       </div>
     <div class="regform">
-      <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="frm">
+      <form [formGroup]="registrationForm" class="frm">
       
         <div class="name-fields">
           
@@ -43,7 +43,7 @@
     <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" >
     <mat-error *ngIf="registrationForm.get('password')?.hasError('required')">Password is required</mat-error>
     <mat-error *ngIf="registrationForm.get('password')?.hasError('pattern')">Password should have atleast 8 characters</mat-error>
-    <button class="eye"mat-icon-button tabindex="-1" matSuffix (click)="togglePasswordVisibility()">
+    <button class="eye"mat-icon-button  matSuffix (click)="togglePasswordVisibility()">
       <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
     </button>
     <mat-error *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched">
@@ -56,7 +56,7 @@
     <mat-label><mat-icon class="icn">lock</mat-icon> Confirm Password</mat-label>
     <input matInput [type]="hideConfirmPassword ? 'password' : 'text'" formControlName="confirmPassword" >
     <mat-error *ngIf="registrationForm.get('confirmPassword')?.hasError('required')">Confirm Password is required</mat-error>
-    <mat-error *ngIf="registrationForm.hasError('passwordMismatch')">Passwords do not match</mat-error>
+    <mat-error *ngIf="registrationForm.hasError('passwordMismatch')">Password doesn't match</mat-error>
     <button class="eye" mat-icon-button tabindex="-1" matSuffix (click)="toggleConfirmPasswordVisibility()">
       <mat-icon>{{ hideConfirmPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
     </button>
@@ -67,7 +67,7 @@
   <br>
      
         <div class="button-group">
-          <button mat-raised-button color="primary" type="submit" class="btn"  >Register</button>
+          <button mat-raised-button color="primary" type="submit" class="btn" (click)="onSubmit()" >Register</button>
           <button  type="button" color="danger" mat-raised-button class="btn-cancel" (click)="onCancel()">Clear</button>
         </div>
         <div  class="login-link">

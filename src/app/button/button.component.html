@@ -1,12 +1,19 @@
-<div class="division">
-    <div class="logo">
-      <img src="/assets/logos/logo.png"/>
+<div id="cont">
+  <div class="opacity">
+   
+    <div class="mine">
+      <img src="/assets/logos/logo.png" height="100px"  width="370px" class="image">
+      <div class="center-buttons">
+       
+        <button class="internal-user-button" (click)="login('internal')">
+          <img src="/assets/Icons/internal_user.png" height="20px" width="20px" class="user-image" /><span class="five">Internal User Login</span>
+         
+        </button>
+         <button class="partner-login-button" (click)="login('external')">  <img src="/assets/Icons/partner_user.png" height="20px" width="20px" class="user" /><span class="six">Partners Login</span></button>
+     </div>
+ 
     </div>
-    
-    <div class="center-buttons">
-       <button class="internal-user-button" (click)="login('internal')">Internal User <br>Login</button>
-        <button class="partner-login-button" (click)="login('external')">Partner's <br>Login</button>
-    </div>
+ 
   </div>
-  
-  
+</div>
+ 

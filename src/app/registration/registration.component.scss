@@ -118,6 +118,9 @@ left:-16px;
 ::ng-deep .snackbar  {
  --mdc-snackbar-container-color: green !important;
 }
+::ng-deep .snackbars  {
+  --mdc-snackbar-container-color: red !important;
+ }
 ::ng-deep .mat-mdc-text-field-wrapper {
   width: 100% !important;
   height: 40px !important;

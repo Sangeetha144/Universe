@@ -1,6 +1,10 @@
 <div id="container">
  
   <div class="login">
+    <div style="margin: 10px;">
+      <a style="color:#02477e;text-decoration: none;" routerLink="/"><mat-icon style="position: relative; top:7px;">keyboard_arrow_left</mat-icon>Back</a>
+    </div>
+    
    
     <img src="/assets/logos/logo.png" height="70px" width="280px" class="logo"><button mat-icon-button (click)="redirectToButton()" class="cancel">
      
@@ -10,25 +14,27 @@
         <p class="intuser">{{loginHeading}}</p>
       </div>
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="frm">
-        <mat-form-field appearance="fill" style="width: 230px;height: 68px; position: relative; right: -40px;">
+        <mat-form-field appearance="outline" style="width: 250px;height: 68px; position: relative; right: -70px;">
           <mat-label><mat-icon class="icn">person</mat-icon> Username</mat-label>
           <input matInput formControlName="username" placeholder="Enter your username">
-          <mat-error *ngIf="loginForm.get('username')?.hasError('required')"></mat-error>
-          <mat-error *ngIf="loginForm.get('username')?.hasError('minlength')"></mat-error>
+          <mat-error *ngIf="loginForm.get('username')?.hasError('required')">Username is required</mat-error>
+
         </mat-form-field>
        
-        <mat-form-field appearance="fill" style="width: 230px;height: 68px; position: relative; right: -40px; border-radius: 10px;">
-          <mat-label><mat-icon style="color:linear-gradient(to top right, #0a4a7a 45%, #f49f15 90%);">lock</mat-icon>Password</mat-label>
+        <mat-form-field appearance="outline" style="width: 250px;height: 68px; position: relative; right: -70px; border-radius: 10px;">
+          <mat-label><mat-icon >lock</mat-icon>Password</mat-label>
           <input matInput type="password" formControlName="password" placeholder="Enter your password">
-          <mat-error *ngIf="loginForm.get('password')?.hasError('required')"></mat-error>
-          <mat-error *ngIf="loginForm.get('password')?.hasError('minlength')"></mat-error>
+          <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required</mat-error>
+          
         </mat-form-field>
         <br>
-        <a><button mat-raised-button color="primary" type="submit" class="btn_cancel" (click)="redirectToButton()">CANCEL</button></a>
-        <a><button mat-raised-button color="primary" type="submit" class="btn_login">LOGIN</button></a><br>
-        <a><small style="color:#02477e; position: relative; right:-88px; top: -3px; color: white;">Forgot Your Password?</small></a>
+        
+    <div>
+        <a><button mat-raised-button color="primary" type="submit" class="btn_login" >LOGIN</button></a></div>
+        
+        <a><small style="color:#02477e; position: relative; right:-40px; top: 23px; color:#02477e;">Forgot Your Password?</small></a>
         <div class="reg-link" *ngIf="link">
-          <a [routerLink]="['/register']" style="color:#02477e;"><small>New User? <u>Register here</u></small></a>
+          <a [routerLink]="['/register']" style="color:#02477e; position: relative; right: -60px; top: -5px;"><small>New User? Signup</small></a>
         </div>
       </form>
     </div>

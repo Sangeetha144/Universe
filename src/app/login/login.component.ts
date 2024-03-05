@@ -43,4 +43,6 @@ link:boolean= false;
   redirectToButton(): void {
     this.router.navigate(['/']); // Replace 'button' with the route to your 'Button' component
   }
+
+  
 }

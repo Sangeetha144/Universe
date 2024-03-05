@@ -1,21 +1,32 @@
+#cont{
+  background-image: url('/assets/logos/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 585px;
+  overflow: hidden;
 
-.division {
-  display: grid;
-  place-items: center; /* Horizontally and vertically center */
-  text-align: center;
-  margin: auto;
-  width: 50%;
-  font-family: "Poppins", sans-serif;
 }
+// .division {
+//   display: grid;
+//   place-items: center; /* Horizontally and vertically center */
+//   text-align: center;
+//   margin: auto;
+//   width: 50%;
+//   font-family: "Poppins", sans-serif;
+// }
  
-.center-buttons {
-  display: flex;
-  flex-direction: row; /* Stack buttons vertically */
-} 
-.logo{
-  margin-top: 150px;
-}
-  
+// .center-buttons {
+//   display: flex;
+//   flex-direction: row;
+ 
+// }
+// }
+// .logo{
+//   margin-top: 150px;
+//   width: 50px;
+//   margin-right: 600px;
+// }
+ 
   .internal-user-button {
     background: linear-gradient(to top, #034a82 0%, #31a5ce 100%);
     color: white;
@@ -23,11 +34,18 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 17px;
-   width:200px;
-  
-  }
-  
+    font-size: 13px;
+   width:170px;
+   height: 50px;
+   position: relative;
+   right: -30px;
+   margin-top: 50px;
+   position: relative;
+   top:-30px;
+ 
+ 
+   }
+ 
   .partner-login-button {
     background: linear-gradient(to bottom, #ff9700 40%, #ff6104 79%);
     color: white;
@@ -35,11 +53,57 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px; 
-    font-size: 17px;
-    width:200px;
-  
+    margin-left: 45px;
+    font-size: 13px;
+    width:170px;
+    height: 50px;
+   position: relative;
+   top:-30px
+   
+   
+   
+ 
   }
-  
-  
-  
+
+  .mine{
+    background-color:rgba(255, 255, 255, 0.85) ;
+    height: 250px;
+    width: 425px;
+    margin:0 auto;
+    position: relative;
+    top : 150px;
+ 
+    border-radius: 5px;
+   
+ 
+  }
+ 
+ .image{
+  padding-right: 105px;
+  margin-top: 25px;
+  margin-left: 20px;
+ 
+ }
+ .user-image{
+  position: relative;
+  right: 9px;
+ top: 4px;
+ 
+ 
+ }
+ .user{
+  position: relative;
+  right: 10px;
+ }
+ .five{
+  position: relative;
+  bottom: 3px;
+ }
+ .six{
+  position: relative;
+  bottom: 3px;
+ }
+ 
+ 
+ 
+ 
