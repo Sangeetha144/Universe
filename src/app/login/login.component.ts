@@ -16,7 +16,7 @@ link:boolean= false;
     this.createForm();
     this.route.params.subscribe(params=>{
       const loginType = params['loginType'];
-      this.loginHeading = loginType === 'internal'? "Internal User Login" : "Partner's Login"
+      this.loginHeading = loginType === 'internal'? "Internal User Login" : "Partner Login"
       this.link = loginType === 'external';
     })
   }
