@@ -21,13 +21,21 @@ margin: 10px;
 }
 .btn-group button{
   width:100px;
+  
 }
 .content-container{
   width:80%;
   margin: 10px;
   
 }
-
+// input#mat-input-0 {
+//   position: absolute;
+//   top: 9px;
+// }
+// input#mat-input-1 {
+//   position: absolute;
+//   top: 9px ;
+// }
 .parent{
   display: flex;
   
@@ -207,3 +215,15 @@ padding:5px;
      padding-right: 5px !important;
    
     }
+    .example-form-field{
+      margin-top: 10px;
+    }
+
+    ::ng-deep .mat-mdc-text-field-wrapper {
+      width: 100% !important;
+      height: 50px !important;
+    
+    }
+    // ::ng-deep .mdc-text-field .mdc-floating-label {
+    //   height:35px !important;
+    // }

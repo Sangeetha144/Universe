@@ -132,11 +132,5 @@ left:-16px;
 // ::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
 //   // color:black;
 // }
-::ng-deep .mdc-text-field{
-  border-top-left-radius: var(--mdc-shape-small, 4px);
-  border-top-right-radius: var(--mdc-shape-small, 4px);
-  border-bottom-right-radius: var(--mdc-shape-small, 4px);
-  border-bottom-left-radius: var(--mdc-shape-small, 4px);
 
-}
 
