@@ -3,6 +3,7 @@ import { FormControl } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
 import {MatDatepicker, MatDatepickerInput, MatDatepickerInputEvent} from '@angular/material/datepicker';
 import { ActivatedRoute } from '@angular/router';
+import { SelectedLabelService } from 'src/app/Services/selectedlabel.service';
 
 @Component({
   selector: 'app-intelligence',
@@ -15,7 +16,7 @@ export class IntelligenceComponent implements OnInit{
 
   @ViewChild('fromDatePicker', { read: MatDatepickerInput }) fromDatePickerInput!: MatDatepickerInput<any>;
   fromDatePicker: any;
-  constructor(private route:ActivatedRoute ){}
+  constructor(private route:ActivatedRoute , private selectedLabelService:SelectedLabelService){}
  
   showSpinner: boolean = false;
   submitted:boolean=false;
@@ -56,9 +57,13 @@ ngOnInit(): void {
   );
   this.futureDateDisable();
 this.setDates();
-this.route.queryParams.subscribe(params => {
-  this.selectedslicename = params['label'];
-
+// this.route.params.subscribe(params => {
+//   this.selectedslicename = params['label'];
+//   const sname = this.selectedslicename
+ 
+// })
+this.selectedLabelService.getSelectedLabel().subscribe(label =>{
+  this.selectedslicename = label
 })
 }
 
@@ -71,6 +76,16 @@ private _FILTER(value: string): string[] {
   const searchvalue = value.toLocaleLowerCase();
   return this.typearray.filter(option => option.toLocaleLowerCase().includes(searchvalue));
 }
+abbreviateOption(option: string): string {
+  const maxLength = 15; // Maximum length for abbreviation
+  if (option.length > maxLength) {
+    return option.substring(0, maxLength) + '...'; // Abbreviate option if it exceeds maxLength
+  }
+  return option;
+}
+
+
+
 
 //date picker
 minDate!: any;

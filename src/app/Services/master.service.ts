@@ -7,13 +7,12 @@ import { Customer } from '../Model/Customer';
   providedIn: 'root'
 })
 export class MasterService {
-  private apiUrl = 'http://localhost:3000/customer'; // Replace 'your_api_url' with your actual API endpoint
-
+  private apiUrl = 'http://localhost:3000/customer'; 
   constructor(private http: HttpClient) { }
 
   GetCustomer(): Observable<Customer[]> {
-    return this.http.get<Customer[]>(this.apiUrl); // Adjust according to your API structure
+    return this.http.get<Customer[]>(this.apiUrl); 
   }
 
-  // Implement other methods such as addCustomer(), editCustomer(), deleteCustomer(), etc.
+
 }

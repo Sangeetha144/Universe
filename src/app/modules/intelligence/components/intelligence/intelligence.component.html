@@ -25,11 +25,11 @@
       <form class="example-form">
         <mat-form-field class="example-full-width" style="width: 200px"  appearance="outline">
           <mat-label>Select Event</mat-label>
-          <input matInput [matAutocomplete]="auto" [formControl]="formcontrol"  [(ngModel)]="selectedOption" />
+          <input matInput [matAutocomplete]="auto" [formControl]="formcontrol"  [(ngModel)]="selectedOption" style="width:140px;"/>
           <mat-icon class="icon">arrow_drop_down</mat-icon>
           <mat-autocomplete autoActiveFirstOption #auto (optionSelected)="optionSelected($event.option.value)">
             <mat-option *ngFor="let item of filteroptions | async" [value]="item">
-              {{ item }}
+              {{ item}}
             </mat-option>
           </mat-autocomplete>
           <!-- <button *ngIf="selectedOption" matSuffix mat-icon-button (click)="clearFilter()">

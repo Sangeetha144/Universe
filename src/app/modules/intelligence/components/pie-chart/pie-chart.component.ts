@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartComponent } from "ng-apexcharts";
- 
+import { Router } from '@angular/router';
 import {
     ApexNonAxisChartSeries,
     ApexResponsive,
     ApexChart
   } from "ng-apexcharts";
+import { SelectedLabelService } from 'src/app/Services/selectedlabel.service';
  
   export type ChartOptions = {
     series: ApexNonAxisChartSeries;
@@ -20,6 +21,7 @@ import {
   styleUrls: ['./pie-chart.component.scss']
 })
 export class PieChartComponent  {
+  constructor(private router:Router,private selectedLabelService:SelectedLabelService){}
   chartOptions : any = {
     series: [44, 55, 13, 43, 22, 37, 40, 33, 27],
     chart: {
@@ -52,21 +54,16 @@ export class PieChartComponent  {
         chart: {
           width: 200
         },
-        legend: {
-            position: 'bottom',
-            horizontalAlign: 'center'
-          }
+    
       }
     }]
   };
  
   redirectToIntelligenceComponent(label: string) {
     // Redirect to intelligence component passing label as a query parameter
-    window.location.href = `intelligence/intelligence?label=${encodeURIComponent(label)}`;
+    // window.location.href = `intelligence/intelligence?label=${encodeURIComponent(label)}`;
+    this.selectedLabelService.setSelectedLabel(label)
+    this.router.navigate(['/intelligence/intelligence',label])
   }
- 
-  handleChartClick(event: any) {
-    // Handle chart click event if needed
-    console.log(event);
-  }
+
 }

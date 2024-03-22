@@ -18,7 +18,7 @@ const routes: Routes = [
     component:IntelligentComponent,
     children:[
       {
-        path:'intelligence',
+        path:'intelligence/:label',
         component:IntelligenceComponent 
        },
        {
